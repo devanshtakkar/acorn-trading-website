@@ -14,8 +14,9 @@ const Navbar: React.FC = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Why Us', href: '#' },
-    { name: 'Performance', href: '#' },
+    { name: 'Testimonials', href: '#testimonials' },
+    { name: 'Performance', href: '#results' },
+    { name: 'Why Us', href: '#why-us' },
     { name: 'Community', href: '#' },
     { name: 'Learn', href: '#' },
   ];
@@ -51,16 +52,9 @@ const Navbar: React.FC = () => {
           ))}
         </div>
 
-        {/* CTA & Mobile Toggle */}
+        {/* Mobile Toggle */}
         <div className="flex items-center gap-4">
-          <a href="#" className="hidden md:flex text-sm font-semibold text-white hover:text-lime-glow transition-colors">
-            Login
-          </a>
-          <button className="hidden md:block px-6 py-2.5 bg-lime-glow text-veridian-900 font-bold rounded-full hover:bg-white hover:scale-105 transition-all duration-300 shadow-[0_0_20px_rgba(159,232,112,0.3)]">
-            Get Started Free
-          </button>
-          
-          <button 
+          <button
             className="md:hidden text-white"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
@@ -77,11 +71,6 @@ const Navbar: React.FC = () => {
               {link.name}
             </a>
           ))}
-          <div className="h-px bg-veridian-600 my-2" />
-          <a href="#" className="text-lg font-medium text-white">Login</a>
-          <button className="w-full py-3 bg-lime-glow text-veridian-900 font-bold rounded-lg">
-            Get Started Free
-          </button>
         </div>
       </div>
     </nav>

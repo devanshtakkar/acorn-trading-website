@@ -4,7 +4,7 @@ import { ShieldCheck, Zap, Users, ArrowRight, CheckCircle2, TrendingUp } from 'l
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative w-full py-20 md:py-32 px-4 md:px-6 max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16 lg:gap-8">
+    <section id="hero" className="relative w-full py-20 md:py-28 px-4 md:px-6 flex flex-col lg:flex-row items-start gap-8 lg:gap-8">
       
       {/* Text Content */}
       <div className="flex-1 space-y-8 animate-slide-up text-center lg:text-left z-20">
@@ -29,14 +29,22 @@ const Hero: React.FC = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
-          <button className="w-full sm:w-auto px-8 py-4 bg-lime-glow text-veridian-900 text-lg font-bold rounded-full hover:bg-white hover:scale-105 transition-all duration-300 shadow-[0_0_30px_rgba(159,232,112,0.4)] flex items-center justify-center gap-2 group">
+          <a
+            href="https://wa.me/8219890171?text=Hello! I'm interested in starting copy trading with Verdant Trade."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto px-8 py-4 bg-lime-glow text-veridian-900 text-lg font-bold rounded-full hover:bg-white hover:scale-105 transition-all duration-300 shadow-[0_0_30px_rgba(159,232,112,0.4)] flex items-center justify-center gap-2 group"
+          >
             Start Copying Now
             <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
-          </button>
-          
-          <button className="w-full sm:w-auto px-8 py-4 bg-transparent border-2 border-veridian-500 text-white text-lg font-semibold rounded-full hover:border-lime-glow hover:text-lime-glow transition-all duration-300">
+          </a>
+
+          <a
+            href="#results"
+            className="w-full sm:w-auto px-8 py-4 bg-transparent border-2 border-veridian-500 text-white text-lg font-semibold rounded-full hover:border-lime-glow hover:text-lime-glow transition-all duration-300"
+          >
             View Performance
-          </button>
+          </a>
         </div>
 
         {/* Trust Indicators */}
@@ -83,7 +91,7 @@ const Hero: React.FC = () => {
             <Calculator />
 
             {/* Floating Badge */}
-            <div className="absolute top-1/2 -right-4 md:-right-12 bg-white p-4 rounded-2xl shadow-xl transform -translate-y-1/2 rotate-3 animate-float hidden sm:block">
+            <div className="absolute top-1/2 -right-4 md:-right-4 bg-white p-4 rounded-2xl shadow-xl transform -translate-y-1/2 rotate-3 animate-float hidden sm:block">
                 <div className="flex items-center gap-3">
                     <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-600">
                         <TrendingUp size={20} />
