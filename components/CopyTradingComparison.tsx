@@ -87,8 +87,9 @@ const CopyTradingComparison: React.FC = () => {
   return (
     <section
       id="copy-trading-comparison"
-      className="relative w-full py-20 md:py-32 px-4 md:px-6 max-w-7xl mx-auto bg-gradient-to-br from-veridian-700 to-veridian-900 overflow-hidden"
+      className="relative w-full py-20 md:py-32 bg-gradient-to-br from-veridian-700 to-veridian-900 overflow-hidden"
     >
+      <div className="max-w-7xl mx-auto px-4 md:px-6">
       {/* Background decorative elements */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div className="absolute top-10 right-10 w-64 h-64 bg-lime-glow/10 rounded-full blur-3xl" />
@@ -186,6 +187,7 @@ const CopyTradingComparison: React.FC = () => {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </section>
   );

@@ -43,8 +43,9 @@ const HowToCopyTrades: React.FC = () => {
     <section
       ref={sectionRef}
       id="how-to-copy-trades"
-      className={`relative w-full py-24 px-4 max-w-7xl mx-auto bg-white transition-opacity duration-700 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
+      className={`relative w-full py-24 bg-white transition-opacity duration-700 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
     >
+      <div className="max-w-7xl mx-auto px-4">
       {/* Three Column Grid Layout */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
         
@@ -66,13 +67,10 @@ const HowToCopyTrades: React.FC = () => {
             {steps.map((step, index) => (
               <div
                 key={index}
-                className="sticky"
-                style={{
-                  top: `${120 + index * 24}px`,
-                  zIndex: 10 + index,
-                }}
+                style={{ position: 'sticky', top: `${96 + index * 24}px`, zIndex: 10 + index }}
+                className="mb-4"
               >
-                <div className="mb-4 bg-gradient-to-br from-veridian-900 to-veridian-800 rounded-3xl shadow-2xl overflow-hidden border border-lime-glow/20 transition-transform duration-500 hover:scale-[1.02]">
+                <div className="bg-gradient-to-br from-veridian-900 to-veridian-800 rounded-3xl shadow-2xl overflow-hidden border border-lime-glow/20 transition-transform duration-500 hover:scale-[1.02]">
                   <div className="grid grid-cols-1 lg:grid-cols-2">
                     {/* Content */}
                     <div className="p-8 lg:p-12 text-white">
@@ -107,6 +105,7 @@ const HowToCopyTrades: React.FC = () => {
         >
           Start Copying Trades
         </a>
+      </div>
       </div>
     </section>
   );

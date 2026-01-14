@@ -168,7 +168,8 @@ const PersonalResults: React.FC = () => {
   const duplicatedResults = [...results, ...results, ...results];
 
   return (
-    <section id="results" className="relative w-full py-20 md:py-32 px-4 md:px-6 max-w-7xl mx-auto overflow-hidden">
+    <section id="results" className="relative w-full py-20 md:py-32 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 md:px-6">
       {/* Background Gradients */}
       <div className="absolute top-1/4 left-0 w-[400px] h-[400px] bg-veridian-900/30 rounded-full blur-[100px] pointer-events-none" />
       <div className="absolute bottom-1/4 right-0 w-[300px] h-[300px] bg-lime-glow/5 rounded-full blur-[80px] pointer-events-none" />
@@ -293,6 +294,7 @@ const PersonalResults: React.FC = () => {
           scrollbar-width: none;
         }
       `}</style>
+      </div>
     </section>
   );
 };

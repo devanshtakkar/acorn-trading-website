@@ -59,8 +59,9 @@ const FAQ: React.FC = () => {
     <section
       ref={sectionRef}
       id="faq"
-      className={`relative w-full py-24 px-4 max-w-7xl mx-auto bg-white transition-opacity duration-700 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
+      className={`relative w-full py-24 bg-white transition-opacity duration-700 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
     >
+      <div className="max-w-7xl mx-auto px-4">
       {/* Header */}
       <div className="text-center mb-16">
         <div className="flex items-center justify-center gap-3 mb-6">
@@ -109,6 +110,7 @@ const FAQ: React.FC = () => {
             </div>
           </div>
         ))}
+      </div>
       </div>
     </section>
   );

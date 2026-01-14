@@ -4,8 +4,9 @@ import { ShieldCheck, Zap, Users, ArrowRight, CheckCircle2, TrendingUp } from 'l
 
 const Hero: React.FC = () => {
   return (
-    <section id="hero" className="relative w-full py-20 md:py-28 px-4 md:px-6 flex flex-col lg:flex-row items-start gap-8 lg:gap-8">
-      
+    <section id="hero" className="relative w-full py-20 md:py-28 flex flex-col lg:flex-row items-start gap-8 lg:gap-8 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 w-full flex flex-col lg:flex-row items-start gap-8 lg:gap-8">
+
       {/* Text Content */}
       <div className="flex-1 space-y-8 animate-slide-up text-center lg:text-left z-20">
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-lime-glow/10 border border-lime-glow/20 text-lime-glow font-semibold text-sm animate-fade-in">
@@ -85,13 +86,13 @@ const Hero: React.FC = () => {
       <div className="flex-1 w-full relative z-10 animate-float">
         <div className="relative">
              {/* Decorative Elements behind calculator */}
-            <div className="absolute -top-12 -right-12 w-24 h-24 bg-gradient-to-br from-lime-400 to-transparent rounded-full opacity-20 blur-xl animate-pulse-slow"></div>
-            <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-veridian-500 rounded-full opacity-20 blur-2xl"></div>
+            <div className="absolute top-0 right-0 translate-x-1/3 -translate-y-1/4 w-24 h-24 bg-gradient-to-br from-lime-400 to-transparent rounded-full opacity-20 blur-xl animate-pulse-slow pointer-events-none" />
+            <div className="absolute bottom-0 left-0 -translate-x-1/4 translate-y-1/4 w-32 h-32 bg-veridian-500 rounded-full opacity-20 blur-2xl pointer-events-none" />
             
             <Calculator />
 
             {/* Floating Badge */}
-            <div className="absolute top-1/2 -right-4 md:-right-4 bg-white p-4 rounded-2xl shadow-xl transform -translate-y-1/2 rotate-3 animate-float hidden sm:block">
+            <div className="absolute top-1/2 right-4 md:right-8 bg-white p-4 rounded-2xl shadow-xl transform -translate-y-1/2 rotate-3 animate-float hidden sm:block">
                 <div className="flex items-center gap-3">
                     <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-600">
                         <TrendingUp size={20} />
@@ -104,7 +105,7 @@ const Hero: React.FC = () => {
             </div>
         </div>
       </div>
-
+      </div>
     </section>
   );
 };

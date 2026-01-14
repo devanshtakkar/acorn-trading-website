@@ -1,0 +1,25 @@
+/* Global resets and overflow prevention */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+img, picture, video, canvas, svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Ensure sections are full-width by default */
+section {
+  width: 100%;
+}
+
+/* Utility to help ensure no unexpected horizontal scroll from large shadows */
+.container-clip {
+  overflow-x: hidden;
+}

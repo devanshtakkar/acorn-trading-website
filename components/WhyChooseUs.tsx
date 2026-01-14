@@ -131,8 +131,9 @@ const WhyChooseUs: React.FC = () => {
     <section 
       id="why-us"
       ref={sectionRef}
-      className="relative w-full py-20 md:py-32 px-4 md:px-6 max-w-7xl mx-auto bg-[#f8f9fa] overflow-hidden"
+      className="relative w-full py-20 md:py-32 bg-[#f8f9fa] overflow-hidden"
     >
+      <div className="max-w-7xl mx-auto px-4 md:px-6">
       {/* Section Header */}
       <div className="relative z-10 text-center mb-16">
         <div className={`inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-300 text-black font-semibold text-sm mb-6 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
@@ -254,6 +255,7 @@ const WhyChooseUs: React.FC = () => {
       </div>
 
       {/* Custom CSS for line-clamp utility */}
+      </div>
       <style>{`
         .line-clamp-2 {
           display: -webkit-box;
