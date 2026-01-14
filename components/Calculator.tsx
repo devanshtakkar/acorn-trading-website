@@ -39,7 +39,7 @@ const Calculator: React.FC = () => {
   const projectedAmount = data[data.length - 1].balance;
 
   return (
-    <div className="glass-panel rounded-3xl p-6 md:p-8 w-full max-w-lg mx-auto shadow-2xl relative overflow-hidden group">
+    <div className="glass-panel rounded-3xl p-6 md:p-8 w-full shadow-2xl relative overflow-hidden group">
         {/* Glow effect inside card */}
         <div className="absolute top-0 right-0 w-64 h-64 bg-lime-glow/5 rounded-full blur-3xl pointer-events-none -translate-y-1/2 translate-x-1/2"></div>
 
