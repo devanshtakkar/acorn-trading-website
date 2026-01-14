@@ -8,24 +8,24 @@ const HowToCopyTrades: React.FC = () => {
     const steps = [
     {
       number: '01',
-      title: 'Copying with Fx Trading',
+      title: 'Copying with Verdant Trading ',
       description: 'Daily shared trades with real-time updates on entry and exit points. Receive instant notifications when new trade opportunities arise, ensuring you never miss a profitable move.',
       icon: TrendingUp,
-      image: 'https://images.unsplash.com/photo-1611974765270-ca1258634369?w=800&h=600&fit=crop'
+      image: '/assets/step1.png'
     },
     {
       number: '02',
       title: 'Copy My Trades',
       description: 'Copy trades into your own account to replicate positions. Simply follow our clear instructions and execute the same trades with one click, matching our professional traders\' positions.',
       icon: Copy,
-      image: 'https://images.unsplash.com/photo-1642543492481-44e81e3914a7?w=800&h=600&fit=crop'
+      image: 'assets/step2.png'
     },
     {
       number: '03',
       title: 'SEE RESULTS QUICKLY',
       description: 'Automatic closure at Take Profit or Stop Loss levels. 82.2% of shared trades were profitable in 2024. Watch your account grow as our proven strategy delivers consistent results.',
       icon: CheckCircle,
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop'
+      image: 'assets/step3.png'
     }
   ];
 
@@ -71,22 +71,22 @@ const HowToCopyTrades: React.FC = () => {
                 className="mb-4"
               >
                 <div className="bg-gradient-to-br from-veridian-900 to-veridian-800 rounded-3xl shadow-2xl overflow-hidden border border-lime-glow/20 transition-transform duration-500 hover:scale-[1.02]">
-                  <div className="grid grid-cols-1 lg:grid-cols-2">
+                  <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[300px] lg:min-h-[350px]">
                     {/* Content */}
-                    <div className="p-8 lg:p-12 text-white">
-                      <div className="flex items-center gap-4 mb-6">
+                    <div className="p-6 md:p-8 lg:p-10 text-white flex flex-col justify-center">
+                      <div className="flex items-center gap-3 md:gap-4 mb-4 md:mb-6">
                         <step.icon className="text-lime-glow" size={28} />
-                        <h3 className="text-2xl lg:text-3xl font-bold">{step.title}</h3>
+                        <h3 className="text-xl md:text-2xl lg:text-3xl font-bold">{step.title}</h3>
                       </div>
-                      <p className="text-gray-300 text-sm lg:text-base">{step.description}</p>
+                      <p className="text-gray-300 text-sm md:text-base lg:text-base">{step.description}</p>
                     </div>
 
                     {/* Image */}
-                    <div className="h-48 lg:h-64 overflow-hidden">
+                    <div className="relative min-h-[250px] lg:min-h-[350px] w-full overflow-hidden bg-veridian-800/50">
                       <img
                         src={step.image}
                         alt={step.title}
-                        className="w-full h-full object-cover"
+                        className="absolute inset-0 w-full h-full object-cover"
                       />
                     </div>
                   </div>

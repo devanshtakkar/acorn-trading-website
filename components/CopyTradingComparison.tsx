@@ -108,7 +108,15 @@ const CopyTradingComparison: React.FC = () => {
       <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
         {/* Pros of Copy Trading */}
         <div className={`relative transition-all duration-700 delay-100 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-          <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-8 md:p-10 shadow-2xl border-2 border-lime-glow/40 h-full">
+          <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-8 md:p-10 shadow-2xl border-2 border-lime-glow/40 h-full overflow-hidden">
+            {/* Overlay Image */}
+            <div className="absolute left-1/2 -translate-x-1/2 lg:left-auto lg:right-0 lg:translate-x-0 top-1/2 lg:top-[30%] -translate-y-1/2 w-2/3 lg:w-1/3 h-auto opacity-30 lg:opacity-60 pointer-events-none">
+              <img
+                src="assets/pros.png"
+                alt="Happy trader using copy trading app"
+                className="w-full h-auto object-contain"
+              />
+            </div>
             <div className="flex items-center gap-3 mb-8">
               <div className="w-14 h-14 rounded-full bg-gradient-to-br from-lime-glow to-green-500 flex items-center justify-center shadow-lg">
                 <CheckCircle size={28} className="text-white" />
@@ -135,21 +143,20 @@ const CopyTradingComparison: React.FC = () => {
                 </div>
               ))}
             </div>
-
-            {/* Image below Pros */}
-            <div className="mt-8 rounded-2xl overflow-hidden shadow-xl border-2 border-lime-glow/20">
-              <img
-                src="https://images.unsplash.com/photo-1611974765270-ca1258634369?w=800&h=400&fit=crop"
-                alt="Happy trader using copy trading app"
-                className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
-              />
-            </div>
           </div>
         </div>
 
         {/* Cons of Trading Yourself */}
         <div className={`relative transition-all duration-700 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-          <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-8 md:p-10 shadow-2xl border-2 border-gray-200 h-full">
+          <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-8 md:p-10 shadow-2xl border-2 border-gray-200 h-full overflow-hidden">
+            {/* Overlay Image */}
+            <div className="absolute left-1/2 -translate-x-1/2 lg:left-auto lg:right-0 lg:translate-x-0  top-1/2 lg:top-[70%] -translate-y-1/2 w-2/3 lg:w-1/3 h-auto opacity-30  lg:opacity-60 pointer-events-none">
+              <img
+                src="assets/cons.png"
+                alt="Stressed trader analyzing complex charts"
+                className="w-full h-auto object-contain"
+              />
+            </div>
             <div className="flex items-center gap-3 mb-8">
               <div className="w-14 h-14 rounded-full bg-gradient-to-br from-red-400 to-red-600 flex items-center justify-center shadow-lg">
                 <XCircle size={28} className="text-white" />
@@ -175,15 +182,6 @@ const CopyTradingComparison: React.FC = () => {
                   </div>
                 </div>
               ))}
-            </div>
-
-            {/* Image below Cons */}
-            <div className="mt-8 rounded-2xl overflow-hidden shadow-xl border-2 border-gray-200">
-              <img
-                src="https://images.unsplash.com/photo-1642543492481-44e81e3914a7?w=800&h=400&fit=crop"
-                alt="Stressed trader analyzing complex charts"
-                className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
-              />
             </div>
           </div>
         </div>
