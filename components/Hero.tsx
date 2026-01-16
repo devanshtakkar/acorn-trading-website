@@ -34,7 +34,7 @@ const Hero: React.FC = () => {
             href="https://wa.me/8219890171?text=Hello! I'm interested in starting copy trading with Verdant Trade."
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full sm:w-auto px-8 py-4 bg-lime-glow text-veridian-900 text-lg font-bold rounded-full hover:bg-white hover:scale-105 transition-all duration-300 shadow-[0_0_30px_rgba(159,232,112,0.4)] flex items-center justify-center gap-2 group"
+            className="w-full sm:w-auto px-8 py-4 bg-red-500 text-white text-lg font-bold rounded-full hover:bg-red-600 hover:scale-105 transition-all duration-300 shadow-[0_0_30px_rgba(239,68,68,0.4)] flex items-center justify-center gap-2 group"
           >
             Start Copying Now
             <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
